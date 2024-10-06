@@ -1,0 +1,285 @@
+/* Общие стили */
+a.link {
+	color: mintcream;
+	text-decoration: none;
+	transition: opacity .25s ease;
+}
+a.link:hover {
+	opacity: 60%;
+}
+
+.block-center {
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.second-title {
+	position: relative;
+	font-size: 28px;
+	text-align: center;
+	margin-bottom: 20px;
+	margin-top: 100px;
+}
+.second-title:after {
+	--underline-width: 60px;
+
+	content: "";
+
+	display: inline-block;
+	width: var(--underline-width);
+	height: 2px;
+	
+	position: absolute;
+	bottom: -7px;
+	left: calc(50% - 60px /2);
+
+	background: blueviolet;
+} 
+
+/* header стили */
+
+.header {
+    height:110vh;
+	background: url(https://i.pinimg.com/originals/3d/44/55/3d4455f190d5a57c6446b3399dc9349d.jpg) no-repeat center;
+	background-size: cover;
+	clip-path: polygon(100% 0, 100% 86%, 54% 100%, 0 88%, 0 0);
+}
+.header-top {
+	position: sticky;
+	top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+	height: 80px;
+
+	color: white;
+	background: rgb(0, 0, 0, 50%);
+	z-index: 3;
+}
+.header-top a.link {
+	color: azure;
+}
+.header-top a.link.active, .header-top a.link:hover {
+	color: blueviolet;
+}
+
+
+.logo {
+	font-size: 38px;
+	color: azure;
+	
+}
+
+.menu-element {
+	margin-right: 30px;
+	font-size: 20px;
+}
+.menu-element :last-child {
+	margin-right: 0;
+}
+
+.menu-element__link.home svg {
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+}
+
+.switcher {
+	position: relative;
+    display: flex;
+    align-items: center;
+	height: 35px;
+	border-radius: 25px;
+	width: 90px;
+	padding: 0 10px;
+	background: blueviolet;
+	opacity: 9;
+
+	transition: .25s ease;
+	cursor: pointer;
+}
+.switcher:hover {
+	opacity: 1;
+}
+.switcher:before {
+	content: "";
+	width: 40px;
+	height: 30px;
+	background: white;
+	position: absolute;
+	left: 42px;
+	z-index: 1;
+	border-radius: 20px;
+
+}
+
+#lang:checked + .switcher:before {
+	left: 7px;
+}
+
+#lang:checked + .switcher span:first-child {
+	color: blueviolet
+}
+#lang:checked + .switcher span:last-child {
+	color: white
+}
+
+.switcher span {
+	flex: 1 1 50%;
+	color: blueviolet;
+	text-align: center;
+	z-index: 2;
+
+}
+.switcher span:first-child {
+color: white;
+}
+
+
+#lang {
+display: none;
+}
+
+.header-centre {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	height: calc(100vh);
+
+	color: azure;
+}
+
+.header-centre__wrapper {
+	width: 100%;
+	text-align: center;
+	background: rgb(0, 0, 0, 50%);
+	padding: 10px 0 20px;
+}
+
+.name {
+	font-size: 44px;
+	line-height: 74px;
+}
+
+.description {
+	display: inline-block;
+	width: 765px;
+
+	font-size: 22px;
+	line-height: 1.5em;
+	font-family: Courier, monospace;
+	white-space: nowrap;
+
+	border-right: 3px solid transparent;
+
+	overflow: hidden;
+
+	animation: cursor 0.75s 8, primt-text 5s steps(58);
+}
+
+/* Обо мне */
+
+.about-me {
+	display: flex;
+}
+
+
+.about-me .left {
+	flex: 1 1 30%;
+	padding-right: 40px;
+	margin-left: 100px;
+	
+}
+
+.about-me__image {
+	width: 280px;
+	margin-left: auto;
+	border-radius: 15px;
+	filter: drop-shadow(10px 10px 20px);
+}
+
+.about-me .right {
+	flex: 1 1 80%;
+	margin-top: 15px;
+}
+.about-me__title {
+	font-size: 35px;
+	margin-bottom: 20px;
+}
+
+.about-me__description {
+	font-size: 18px;
+	margin-bottom: 20px;
+
+}
+
+.about-me__extra {
+	margin-top: 35px;
+}
+.about-me__extra-element {
+	display: flex;
+	margin-bottom: 10px;
+}
+.about-me__extra-element:last-of-type {
+	
+	margin-bottom: 0;
+}
+
+.about-me__icon {
+	width: 24px;
+	height: 24px;
+	margin-right: 5px;
+
+}
+
+.about-me__icon svg {
+	color: blueviolet;
+}
+
+.bold {
+	margin-right: 5px;
+	font-weight: 800;
+}
+
+/* Интересы */
+
+.interests {
+	padding: 40px 20px;
+}
+
+.interests-list{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.interest-wrapper {
+
+	flex-direction: column;
+
+	width: 33%;
+	margin-bottom: 20px;
+	padding: 10px;
+	  
+	border-radius: 30px;
+	box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.interests-image {
+	width: 220px;
+	margin-top: 20px;
+}
+
+.interest-title {
+	margin-bottom: 15px;
+	margin-top: 15px;
+	font-size: 20px;
+}
+
+.interest-text {
+	margin-bottom: 10px;
+	
+}
