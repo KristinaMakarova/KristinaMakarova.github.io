@@ -36,6 +36,10 @@ justify-content: center;
 	background: blueviolet;
 } 
 
+.active {
+	color: blueviolet;
+}
+
 /* header стили */
 
 .header {
@@ -244,6 +248,161 @@ display: none;
 	font-weight: 800;
 }
 
+
+
+/* Навыки */
+
+.section-description {
+	font-size: 16px;
+	margin-top: 35px;
+	margin-bottom: 30px;
+
+}
+
+ul.skills-filters {
+	gap: 20px;
+	font-size: 18px;
+	margin-bottom: 50px;
+}
+.skill-filter {
+	cursor: pointer;
+	transition: color .25s ease;
+}
+
+.skill-filter:hover {
+	color: blueviolet;
+}
+
+.skills-wrapper {
+	display: flex;
+	width: 80%;
+	margin: 0 auto;
+
+}
+
+.skills-list__row {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.skills-wrapper .left {
+	flex: 1 1 70%;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: flex-start;
+	gap: 20px;
+
+	max-width: 70%;
+
+	padding-right: 40px;
+	
+}
+
+.skills-wrapper .right {
+	flex: 1 1 30%;
+	padding: 0 0 20px 35px;
+	
+	border-left: 2px solid gray;
+}
+
+
+.skills-list__element {
+	display: flex;
+	align-items: center;
+
+	flex: 1 1 30%;
+	max-width: 31%;
+	min-height: 80px;
+
+	padding: 10px;
+
+	box-shadow: 0 0 10px;
+	border-radius: 3px;
+	cursor: pointer;
+	transition: color .25s ease;
+}
+
+.skills-list__element:hover {
+	color: blueviolet;
+}
+
+.skills-list__element > *:first-child {
+	flex: 1 1 30%;
+	max-width: 100px;
+}
+
+.skills-list__element > *:last-child {
+	flex: 1 1 70%;
+	padding-left: 20px;
+
+	font-size: 24px;
+}
+
+skill-cards__title {
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+}
+
+.skill-cards__title img {
+	width: 150px;
+}
+
+.skill-card__name {
+	padding-left: 20px;
+	font-size: 24px;
+}
+
+.skill-card__description {
+	text-align: justify;
+}
+
+/* Работа */
+
+.work {
+	padding: 40px;
+}
+
+.work-wrapper {
+	position: relative;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	width: 800px;
+	margin: 0 auto;
+}
+
+
+.work-wrapper:before {
+content: '';
+position: absolute;
+
+display: inline-block;
+width: 1px;
+height: 50vh;
+background: gray;
+}
+
+.work-element__content {
+	width: 350px;
+	padding: 10px;
+}
+
+.work-element.left {
+	margin-right: auto;
+}
+
+.work-element.right {
+margin-left: auto;
+}
+
+
+
+
 /* Интересы */
 
 .interests {
@@ -258,7 +417,7 @@ display: none;
 .interest-wrapper {
 
 	flex-direction: column;
-
+	align-items: center;
 	width: 33%;
 	margin-bottom: 20px;
 	padding: 10px;
@@ -269,7 +428,7 @@ display: none;
 
 
 .interests-image {
-	width: 220px;
+	width: 250px;
 	margin-top: 20px;
 }
 
@@ -281,5 +440,69 @@ display: none;
 
 .interest-text {
 	margin-bottom: 10px;
-	
+	justify-content: space-around;
+}
+
+/*обратная связь*/
+
+.contact-me {
+padding: 40px 0;
+}
+
+
+
+.contact-me__form {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.input-wrapper {
+	width: 50%;
+	display: inline-block;
+}
+
+.input-wrapper.left {
+	float: left;
+}
+
+.input-wrapper.right {
+	float: right;
+}
+
+.input-wrapper,
+.textarea-wrapper {
+  margin-bottom: 15px; /*  Отступ  снизу  */
+  border: 1 px solid black;
+}
+
+.label {
+  display: block; /*  Занимаем  всю  ширину  */
+  margin-bottom: 5px; /*  Отступ  снизу  */
+  font-weight: bold; /*  Жирный  шрифт  */
+}
+
+.input,
+.textarea {
+  width: 100%; 
+  padding: 10px; 
+  border: 1px solid gray;
+  border-radius: 5px; 
+  box-sizing: border-box; 
+  font-size: 16px; 
+  color: black;
+  background-color: white; 
+}
+
+button[type="submit"] {
+  background-color: blueviolet; 
+  color: white; 
+  padding: 12px 20px; 
+  border-radius: 2px; 
+  cursor: pointer;
+  transition: background-color 0.25s ease; 
+}
+
+button[type="submit"]:hover {
+  background-color: blueviolet;
 }

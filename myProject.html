@@ -10,7 +10,7 @@
 <body>
     <header class="header" id="home">
         <div class="header-top">
-            <a href="" class="link logo block-center">Kristina Makarova</a>
+            <a href="" class="link logo block-center">Кристина Макарова</a>
             <nav class="navigation">
                 <ul class="menu block-center">
                     <li class="menu-element">
@@ -106,32 +106,43 @@
        <section class="skills" id="skill">
         <h2 class="second-title">Навыки</h2>
 
-        <p class="section-description">Можно специализироваться как на frontend-, так и на backend-разработках, но в любом случае нужно иметь хоть какое-то представление о том, какие взаимосвязи происходят между интерфейсом и сервером сайта.</p>
+        <p class="section-description block-center">Можно специализироваться как на frontend-, так и на backend-разработках, но в любом случае нужно иметь хоть какое-то представление о том, какие взаимосвязи происходят между интерфейсом и сервером сайта.</p>
     
-    <ul class="skills-filters">
-        <li class="skill-filter">Все</li>
-        <li class="skill-filter">Html</li>
-        <li class="skill-filter">Css</li>
-        <li class="skill-filter">Js</li>
+    <ul class="skills-filters block-center">
+        <li role="button" class="skill-filter active">Все</li>
+        <li role="button" class="skill-filter">Html</li>
+        <li role="button" class="skill-filter">Css</li>
+        <li role="button" class="skill-filter">Js</li>
     </ul>
     <div class="skills-wrapper">
-            <ul class="skills-list left">
-                <li class="skills-list__element">Html</li>
-                <li class="skills-list__element">Css</li>
-                <li class="skills-list__element">Js</li>
-            </ul>
+            <div class="skills-list left">
+                <div class="skills-list__row">
+                <div class="skills-list__element">
+                    <img src="https://s-sd.ru/images/cms/thumbs/a5b0aeaa3fa7d6e58d75710c18673bd7ec6d5f6d/html_1920_1031_jpg_0_100.jpg" alt="Html" class="skill-card__image">
+                    <span class="skills-list__title">Html</span> 
+                </div>
+                <div class="skills-list__element">
+                    <img src="https://avatars.mds.yandex.net/i?id=b10024815f167eafade559f17a298e2c_l-5231808-images-thumbs&n=13" alt="Css" class="skill-card__image">
+                    <span class="skills-list__title">Css</span> 
+                </div>
+                <div class="skills-list__element">
+                    <img src="https://avatars.mds.yandex.net/i?id=a6f30ad85b09ec05144e5a978b1d0a70_l-5284079-images-thumbs&n=13" alt="Js" class="skill-card__image">
+                    <span class="skills-list__title">Js</span> 
+                </div>
+                </div>
+            </div>
             <div class="skill-card right">
-                <div class="skill-cars__title">
+                <div class="skill-cards__title">
                     <img src="https://s-sd.ru/images/cms/thumbs/a5b0aeaa3fa7d6e58d75710c18673bd7ec6d5f6d/html_1920_1031_jpg_0_100.jpg" alt="Html" class="skill-card__image">
                     <span class="skill-card__name">Html</span>
                 </div>
                 <p class="skill-card__description">Язык разметки для создания структуры веб-страницы и представления контента.</p>
-                <div class="skill-cars__title">
+                <div class="skill-cards__title">
                     <img src="https://avatars.mds.yandex.net/i?id=b10024815f167eafade559f17a298e2c_l-5231808-images-thumbs&n=13" alt="Css" class="skill-card__image">
                     <span class="skill-card__name">Css</span>
                 </div>
                 <p class="skill-card__description">язык, который используют для визуального оформления веб-сайтов. Он работает в связке с языком разметки HTML. CSS отвечает за то, как выглядят объекты на странице: их размер, цвет, фоновое изображение, степень прозрачности, расположение относительно других элементов, поведение при наведении курсора, визуальное изменение кнопок при нажатии и т. п.</p>
-                <div class="skill-cars__title">
+                <div class="skill-cards__title">
                     <img src="https://avatars.mds.yandex.net/i?id=a6f30ad85b09ec05144e5a978b1d0a70_l-5284079-images-thumbs&n=13" alt="Js" class="skill-card__image">
                     <span class="skill-card__name">Js</span>
                 </div>
@@ -192,7 +203,7 @@
     </section>
     <section class="contact-me" id="contact-me">
         <h2 class="second-title">Обратная связь</h2>
-        <form class="contact-me__form">
+        <form action ="contact-me__form ">
             <div class="input-wrapper">
                 <label class="label" for="name">Имя</label>
                 <input class="input" type="text" id="name" required>
@@ -203,7 +214,7 @@
             </div>
             <div class="textarea-wrapper">
                 <label class="label"  for="message">Сообщение</label>
-                <textarea class="textarea" name="message" id="message" cols="30" rows="10"></textarea required>
+                <textarea class="textarea" name="message" id="message" cols="30" rows="10"></textarea>
             </div>
             <button type="submit">Отправить</button>
         </form>
