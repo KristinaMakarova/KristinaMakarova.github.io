@@ -15,7 +15,7 @@ justify-content: center;
 }
 .second-title {
 	position: relative;
-	font-size: 28px;
+	font-size: 30px;
 	text-align: center;
 	margin-bottom: 20px;
 	margin-top: 100px;
@@ -33,11 +33,16 @@ justify-content: center;
 	bottom: -7px;
 	left: calc(50% - 60px /2);
 
-	background: blueviolet;
+	background: rgb(29, 172, 65);
 } 
 
 .active {
-	color: blueviolet;
+	color: rgb(29, 172, 65);
+}
+
+body {
+	background: rgb(7, 7, 7);
+	color: white;
 }
 
 /* header стили */
@@ -54,18 +59,18 @@ justify-content: center;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-
+	width: 100%;
 	height: 80px;
 
 	color: white;
 	background: rgb(0, 0, 0, 50%);
-	z-index: 3;
+	z-index: 999;
 }
 .header-top a.link {
 	color: azure;
 }
 .header-top a.link.active, .header-top a.link:hover {
-	color: blueviolet;
+	color: rgb(29, 172, 65);
 }
 
 
@@ -89,61 +94,6 @@ justify-content: center;
 	height: 24px;
 }
 
-.switcher {
-	position: relative;
-    display: flex;
-    align-items: center;
-	height: 35px;
-	border-radius: 25px;
-	width: 90px;
-	padding: 0 10px;
-	background: blueviolet;
-	opacity: 9;
-
-	transition: .25s ease;
-	cursor: pointer;
-}
-.switcher:hover {
-	opacity: 1;
-}
-.switcher:before {
-	content: "";
-	width: 40px;
-	height: 30px;
-	background: white;
-	position: absolute;
-	left: 42px;
-	z-index: 1;
-	border-radius: 20px;
-
-}
-
-#lang:checked + .switcher:before {
-	left: 7px;
-}
-
-#lang:checked + .switcher span:first-child {
-	color: blueviolet
-}
-#lang:checked + .switcher span:last-child {
-	color: white
-}
-
-.switcher span {
-	flex: 1 1 50%;
-	color: blueviolet;
-	text-align: center;
-	z-index: 2;
-
-}
-.switcher span:first-child {
-color: white;
-}
-
-
-#lang {
-display: none;
-}
 
 .header-centre {
 	display: flex;
@@ -172,13 +122,13 @@ display: none;
 	display: inline-block;
 	width: 765px;
 
-	font-size: 22px;
+	font-size: 30px;
 	line-height: 1.5em;
 	font-family: Courier, monospace;
 	white-space: nowrap;
 
 	border-right: 3px solid transparent;
-
+	padding-top: 15px;
 	overflow: hidden;
 
 	animation: cursor 0.75s 8, primt-text 5s steps(58);
@@ -215,7 +165,7 @@ display: none;
 }
 
 .about-me__description {
-	font-size: 18px;
+	font-size: 20px;
 	margin-bottom: 20px;
 
 }
@@ -240,7 +190,7 @@ display: none;
 }
 
 .about-me__icon svg {
-	color: blueviolet;
+	color: rgb(29, 172, 65);
 }
 
 .bold {
@@ -270,7 +220,7 @@ ul.skills-filters {
 }
 
 .skill-filter:hover {
-	color: blueviolet;
+	color:rgb(29, 172, 65);
 }
 
 .skills-wrapper {
@@ -325,7 +275,7 @@ ul.skills-filters {
 }
 
 .skills-list__element:hover {
-	color: blueviolet;
+	color: rgb(29, 172, 65);
 }
 
 .skills-list__element > *:first-child {
@@ -359,89 +309,7 @@ skill-cards__title {
 	text-align: justify;
 }
 
-/* Работа */
 
-.work {
-	padding: 40px;
-}
-
-.work-wrapper {
-	position: relative;
-
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-
-	width: 800px;
-	margin: 0 auto;
-}
-
-
-.work-wrapper:before {
-content: '';
-position: absolute;
-
-display: inline-block;
-width: 1px;
-height: 50vh;
-background: gray;
-}
-
-.work-element__content {
-	width: 350px;
-	padding: 10px;
-}
-
-.work-element.left {
-	margin-right: auto;
-}
-
-.work-element.right {
-margin-left: auto;
-}
-
-
-
-
-/* Интересы */
-
-.interests {
-	padding: 40px 20px;
-}
-
-.interests-list{
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
-}
-.interest-wrapper {
-
-	flex-direction: column;
-	align-items: center;
-	width: 33%;
-	margin-bottom: 20px;
-	padding: 10px;
-	  
-	border-radius: 30px;
-	box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.2);
-}
-
-
-.interests-image {
-	width: 250px;
-	margin-top: 20px;
-}
-
-.interest-title {
-	margin-bottom: 15px;
-	margin-top: 15px;
-	font-size: 20px;
-}
-
-.interest-text {
-	margin-bottom: 10px;
-	justify-content: space-around;
-}
 
 /*обратная связь*/
 
@@ -490,12 +358,12 @@ padding: 40px 0;
   border-radius: 5px; 
   box-sizing: border-box; 
   font-size: 16px; 
-  color: black;
-  background-color: white; 
+  color: rgb(255, 255, 255);
+  background-color: rgb(2, 2, 2); 
 }
 
 button[type="submit"] {
-  background-color: blueviolet; 
+  background-color: rgb(29, 172, 65); 
   color: white; 
   padding: 12px 20px; 
   border-radius: 2px; 
@@ -505,4 +373,12 @@ button[type="submit"] {
 
 button[type="submit"]:hover {
   background-color: blueviolet;
+}
+
+
+footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 20px;
 }
