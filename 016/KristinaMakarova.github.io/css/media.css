@@ -1,0 +1,406 @@
+@media screen and (max-width: 1400px ) {
+	/*Menu*/
+    .header-top a.link {
+        color: azure;
+        margin-left: 40px;
+    }
+    
+    .logo {
+        font-size: 34px;
+        
+    }
+    .menu-element__link.home svg {
+        margin: 0;
+    }
+    .menu-element {
+        font-size: 20px;
+        padding-right: 0px;
+        margin-right: 0px;
+
+    }
+    .menu-element :last-child {
+        margin-right: 40px;
+    }
+    .about-me .right {
+        margin-left: 15px;
+    }
+    .about-me__title {
+        font-size: 30px;
+    }
+    .about-me__description {
+        font-size: 18px;
+        margin-bottom: 20px;
+        margin-right: 100px;
+    
+    }
+    .about-me__extra {
+        font-size: 18px; 
+        margin-right: 100px;
+    }
+    .about-me__icon {
+        width: 20px;
+        height: 20px;
+        margin-right: 5px;
+    
+    }
+    .contact-me {
+        margin-right: 100px;
+        margin-left: 100px;
+    }
+    .input-wrapper {
+        width: 30%;
+    }
+}
+
+
+@media screen and (max-width: 1200px ) {
+	/*Menu*/
+
+    .header-top a.link {
+        color: azure;
+        margin-left: 30px;
+    }
+    
+    .logo {
+        font-size: 25px;
+        
+    }
+    .menu-element__link.home svg {
+        width: 18px;
+        height: 18px;
+        margin: 0;
+    }
+    .menu-element {
+        font-size: 16px;
+        padding-right: 0px;
+        margin-right: 0px;
+
+    }
+    .menu-element :last-child {
+        margin-right: 30px;
+    }
+    .description {
+        font-size: 25px;
+    }
+
+    /*About me*/
+
+    .about-me .left {
+        margin-top: 70px;
+        margin-left: 100px;
+    }
+    .about-me .right {
+        margin-top: 70px;
+    }
+    .about-me__title {
+        font-size: 24px;
+    }
+    .about-me__description {
+        font-size: 15px;
+        margin-right: 100px;
+    }
+    .about-me__extra {
+        font-size: 15px;
+    }
+    .about-me__icon {
+        width: 20px;
+        height: 20px;
+    }
+   
+
+    /*Skills*/
+
+    .second-title {
+        font-size: 25px;
+    }
+    .section-description {
+        font-size: 17px;
+        margin-bottom: 30px;
+        margin-left:30px;
+        margin-right: 30px;
+        text-align: center;
+    }
+
+    .skills-filters {
+        font-size: 18px;
+    }
+    .skills-list__element > *:last-child {
+        display: flex;
+	    align-items: center;
+        font-size: 17px;
+        flex: 1 1 20%;
+	    max-width: 21%;
+	    min-height: 70px;
+        padding: 5px;
+    }
+
+    .skill-card__name {
+        font-size: 20px;
+        padding-left: 10px;
+    }
+    .skill-card__description {
+        font-size: 17px;
+        margin-bottom: 15px;
+    }
+
+    /*Contact me*/
+
+    .contact-me {
+        margin-right: 30px;
+        margin-left: 30px;
+    }
+    .input-wrapper {
+        width: 30%;
+    }
+
+}
+
+@media screen and (max-width: 992px ) {
+    .header-top a.link {
+        color: azure;
+        margin-left: 20px;
+    }
+    
+    .logo {
+        font-size: 18px;
+        
+    }
+    .menu-element {
+        font-size: 15px;
+        padding-right: 0px;
+        margin-right: 0px;
+
+    }
+    .menu-element__link.home svg {
+        width: 16px;
+        height: 16px;
+        margin: 0;
+    }
+    .menu-element :last-child {
+        margin-right: 20px;
+    }
+
+    .description {
+        font-size: 20px;
+    }
+
+    /*About me*/
+
+    .about-me .left {
+        margin-top: 70px;
+        margin-left: 80px;
+    }
+
+    .about-me .right {
+        margin-top: 70px;
+        margin-right: 40px;
+    }
+    .about-me__title {
+        font-size: 18px;
+    }
+    .about-me__description {
+        font-size: 13px;
+        margin-right: 40px;
+        margin-bottom: 2px;
+    }
+    .about-me__extra {
+        font-size: 13px;
+    }
+    .about-me__icon {
+        width: 16px;
+        height: 16px;
+    }
+
+
+    /*Skills*/
+
+    .second-title {
+        font-size: 18px;
+    }
+    .section-description {
+        margin-left:30px;
+        margin-right: 30px;
+        font-size: 13px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    .skills-filters {
+        font-size: 18px;
+    }
+    .skills-list__element > *:last-child {
+        display: flex;
+	    align-items: center;
+        font-size: 12px;
+        flex: 1 1 20%;
+	    max-width: 21%;
+	    min-height: 70px;
+        padding: 3px;
+    }
+    .skill-card__image {
+        width: 18px;
+        height: 40px;
+    }
+    .skill-cards__title img {
+        width: 80px;
+    }
+
+    .skill-card__name {
+        font-size: 18px;
+        padding-left: 10px;
+    }
+    .skill-card__description {
+        font-size: 13px;
+        margin-bottom: 15px;
+    }
+
+    /*Contact me*/
+
+    .contact-me {
+        margin-right: 30px;
+        margin-left: 30px;
+    }
+    .input-wrapper {
+        width: 25%;
+    }
+}
+
+@media screen and (max-width: 768px ) {
+
+    /* .header-top {
+        position: fixed;
+        flex-direction: column;
+        width: 58%;
+        right: 0;
+        height: 100vh;
+        background: black;
+    } */
+    .header-centre__wrapper {
+        width: 100%;
+    }
+    .description {
+        width: 100%;
+        font-size: 14px;
+    }
+    .header-top a.link {
+        color: azure;
+        margin-left: 20px;
+    }
+    
+    .logo {
+        font-size: 15px;
+        margin: 0;
+        
+    }
+    .menu-element {
+        font-size: 12px;
+margin: 0;
+position: 0;
+
+    }
+    .menu-element__link.home svg {
+        width: 12px;
+        height: 12px;
+        margin: 0;
+    }
+    .menu-element :last-child {
+        margin-right: 2px;
+    }
+
+    .description {
+        font-size: 15px;
+    }
+
+    /*About me*/
+
+    .about-me .left {
+        flex: 1 1 40%;
+        margin-top: 70px;
+        margin-left: 10px;
+        padding: 0;
+    }
+    .about-me .right {
+        flex: 1 1 60%;
+        margin-top: 70px;
+        margin-left: 15px;
+        margin-right: 10px;
+    }
+    .about-me__title {
+        font-size: 15px;
+    }
+    .about-me__description {
+        font-size: 12px;
+        margin-right: 0px;
+        margin-bottom: 2px;
+    }
+    .about-me__extra {
+        font-size: 12px;
+        margin: 0;
+    }
+    .about-me__icon {
+        width: 12px;
+        height: 12px;
+    }
+
+
+    /*Skills*/
+
+    .second-title {
+        font-size: 13px;
+    }
+    .section-description {
+        margin-left:10px;
+        margin-right: 10px;
+        font-size: 13px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    .skills-filters {
+        font-size: 13px;
+    }
+    .skills-wrapper {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .skills-list__row {
+        flex-wrap: wrap;
+    }
+    .skills-list__element {
+        display: flex;
+	    align-items: center;
+
+        font-size: 12px;
+        flex: 1 1 20%;
+	    max-width: 80%;
+	    min-height: 10px;
+        padding: 20px;
+        margin-bottom: 10px;
+        margin-left: 30px;
+    }
+    .skill-card__image {
+        width: 20px;
+        height: 20px;
+    }
+    .skill-cards__title img {
+        width: 80px;
+    }
+
+    .skill-card__name {
+        font-size: 15px;
+        padding-left: 10px;
+    }
+    .skill-card__description {
+        font-size: 13px;
+        margin-bottom: 15px;
+    }
+
+    /*Contact me*/
+
+    .contact-me {
+        margin-right: 30px;
+        margin-left: 30px;
+    }
+    .input-wrapper {
+        width: 25%;
+        font-size: 13px;
+    }
+} 

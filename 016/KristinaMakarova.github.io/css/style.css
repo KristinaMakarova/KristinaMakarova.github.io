@@ -1,0 +1,392 @@
+
+/* Общие стили */
+a.link {
+	color: mintcream;
+	text-decoration: none;
+	transition: opacity .25s ease;
+}
+a.link:hover {
+	opacity: 60%;
+}
+
+.block-center {
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.second-title {
+	position: relative;
+	font-size: 30px;
+	text-align: center;
+	margin-bottom: 20px;
+	margin-top: 100px;
+}
+.second-title:after {
+	--underline-width: 60px;
+
+	content: "";
+
+	display: inline-block;
+	width: var(--underline-width);
+	height: 2px;
+	
+	position: absolute;
+	bottom: -7px;
+	left: calc(50% - 60px /2);
+
+	background: rgb(29, 172, 65);
+} 
+
+.active {
+	color: rgb(29, 172, 65);
+}
+
+body {
+	background: rgb(7, 7, 7);
+	color: white;
+}
+
+/* header стили */
+
+
+.menu-humburger {
+	display: none;
+}
+.header {
+    height:110vh;
+	background: url(https://i.pinimg.com/originals/3d/44/55/3d4455f190d5a57c6446b3399dc9349d.jpg) no-repeat center;
+	background-size: cover;
+	clip-path: polygon(100% 0, 100% 86%, 54% 100%, 0 88%, 0 0);
+}
+.header-top {
+	position: sticky;
+	top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+	width: 100%;
+	height: 80px;
+
+	color: white;
+	background: rgb(0, 0, 0);
+	z-index: 999;
+}
+.header-top a.link {
+	color: azure;
+	margin-left: 90px;
+}
+.header-top a.link.active, .header-top a.link:hover {
+	color: rgb(29, 172, 65);
+}
+
+
+.logo {
+	font-size: 30px;
+	color: azure;
+	
+}
+
+.menu-element {
+	font-size: 20px;
+	padding: 0;
+}
+.menu-element :last-child {
+	margin-right: 50px;
+}
+
+.menu-element__link.home svg {
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+}
+
+
+.header-centre {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	height: calc(100vh);
+
+	color: azure;
+}
+
+.header-centre__wrapper {
+	width: 100%;
+	text-align: center;
+	background: rgb(0, 0, 0, 50%);
+	padding: 10px 0 20px;
+}
+
+.name {
+	font-size: 44px;
+	line-height: 74px;
+}
+
+.description {
+	display: inline-block;
+	width: 765px;
+
+	font-size: 30px;
+	line-height: 1.5em;
+	font-family: Courier, monospace;
+	white-space: nowrap;
+
+	border-right: 3px solid transparent;
+	padding-top: 15px;
+	overflow: hidden;
+
+	animation: cursor 0.75s 8, primt-text 5s steps(58);
+}
+
+/* Обо мне */
+
+.about-me {
+	display: flex;
+}
+
+
+.about-me .left {
+	flex: 1 1 30%;
+	padding-right: 40px;
+	margin-left: 150px;
+	margin-top: 100px;
+	
+}
+
+.about-me__image {
+	width: 300px;
+	margin-left: auto;
+	border-radius: 15px;
+	filter: drop-shadow(10px 10px 20px);
+}
+
+.about-me .right {
+	flex: 1 1 70%;
+	margin-top: 100px;
+}
+.about-me__title {
+	font-size: 35px;
+	margin-bottom: 20px;
+}
+
+.about-me__description {
+	font-size: 20px;
+	margin-bottom: 20px;
+	margin-right: 150px;
+
+}
+
+.about-me__extra {
+	margin-top: 35px;
+}
+.about-me__extra-element {
+	display: flex;
+	margin-bottom: 10px;
+}
+.about-me__extra-element:last-of-type {
+	
+	margin-bottom: 0;
+}
+
+.about-me__icon {
+	width: 24px;
+	height: 24px;
+	margin-right: 5px;
+
+}
+
+.about-me__icon svg {
+	color: rgb(29, 172, 65);
+}
+
+.bold {
+	margin-right: 5px;
+	font-weight: 800;
+}
+
+
+
+/* Навыки */
+
+.section-description {
+	font-size: 16px;
+	margin-top: 35px;
+	margin-bottom: 30px;
+
+}
+
+ul.skills-filters {
+	gap: 20px;
+	font-size: 18px;
+	margin-bottom: 50px;
+}
+.skill-filter {
+	cursor: pointer;
+	transition: color .25s ease;
+}
+
+.skill-filter:hover {
+	color:rgb(29, 172, 65);
+}
+
+.skills-wrapper {
+	display: flex;
+	width: 80%;
+	margin: 0 auto;
+
+}
+
+.skills-list__row {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.skills-wrapper .left {
+	flex: 1 1 70%;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: flex-start;
+	gap: 20px;
+
+	max-width: 70%;
+
+	padding-right: 40px;
+	
+}
+
+.skills-wrapper .right {
+	flex: 1 1 30%;
+	padding: 0 0 20px 35px;
+	
+	border-left: 2px solid gray;
+}
+
+
+.skills-list__element {
+	display: flex;
+	align-items: center;
+
+	flex: 1 1 30%;
+	max-width: 31%;
+	min-height: 80px;
+
+	padding: 10px;
+
+	box-shadow: 0 0 10px;
+	border-radius: 3px;
+	cursor: pointer;
+	transition: color .25s ease;
+}
+
+.skills-list__element:hover {
+	color: rgb(29, 172, 65);
+}
+
+.skills-list__element > *:first-child {
+	flex: 1 1 30%;
+	max-width: 100px;
+}
+
+.skills-list__element > *:last-child {
+	flex: 1 1 70%;
+	padding-left: 20px;
+
+	font-size: 24px;
+}
+
+.skill-cards__title {
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+}
+
+.skill-cards__title img {
+	width: 150px;
+}
+
+.skill-card__name {
+	padding-left: 20px;
+	font-size: 24px;
+}
+
+.skill-card__description {
+	text-align: justify;
+	margin-bottom: 20px;
+}
+
+
+
+/*обратная связь*/
+
+.contact-me {
+padding: 40px 0;
+}
+
+
+
+.contact-me__form {
+	width: 100%;
+	max-width: 1200px;
+}
+
+.input-wrapper {
+	width: 50%;
+	display: inline-block;
+}
+
+.input-wrapper.left {
+	float: left;
+}
+
+.input-wrapper.right {
+	float: right;
+}
+
+.input-wrapper,
+.textarea-wrapper {
+  margin-bottom: 15px; /*  Отступ  снизу  */
+  border: 1 px solid black;
+}
+
+.label {
+  display: block; /*  Занимаем  всю  ширину  */
+  margin-bottom: 5px; /*  Отступ  снизу  */
+  font-weight: bold; /*  Жирный  шрифт  */
+}
+
+.input,
+.textarea {
+  width: 100%; 
+  padding: 10px; 
+  border: 1px solid gray;
+  border-radius: 5px; 
+  box-sizing: border-box; 
+  font-size: 16px; 
+  color: rgb(255, 255, 255);
+  background-color: rgb(2, 2, 2); 
+}
+
+button[type="submit"] {
+  background-color: rgb(29, 172, 65); 
+  color: white; 
+  padding: 12px 20px; 
+  border-radius: 2px; 
+  cursor: pointer;
+  transition: background-color 0.25s ease; 
+}
+
+button[type="submit"]:hover {
+  background-color: rgb(77, 39, 113);
+}
+
+
+footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 20px;
+}
